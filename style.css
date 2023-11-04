@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+body{
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color:hsl(213, 19%, 18%);
+    padding: 2em;
+    border-radius: 2em;
+}
+
+.star img{
+    border-radius: 50%;
+    background-color:hsla(216, 12%, 8%, 0.2);
+    padding: 1em;
+}
+
+.container-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    font-weight: 700;
+}
+
+.container-box span{
+    height: .5em;
+    width: .5em;
+    border-radius: 50%;
+    color:hsl(217, 12%, 63%);
+    background-color: hsl(216, 12%, 8%, .2);
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container-box span:active{
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+.container-box span:hover{
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+}
+
+h1{
+    color: white;
+}
+
+.container-t p.appr,
+.text p{
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5;
+}
+
+.btn{
+    border: none;
+    padding: 1em;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5em;
+    border-radius: 2em;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: orange;
+    background-color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.checked{
+    background-color: hsl(217, 12%, 63%) !important;
+    color: white !important;
+}
+
+.container-t{
+    text-align: center;
+    background-color:hsl(213, 19%, 18%);
+    padding: 2em;
+    border-radius: 2em;
+    height: 420.86px;
+    width: 440;
+}
+
+.container-t h1{
+    padding-top: 1em;
+}
+
+.chip {
+    background-color:hsl(213, 20%, 22%);
+    margin: auto;
+    padding-right: 0.7em;
+    padding-left: 0.7em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    border-radius: 2rem;
+    color: hsl(25, 97%, 53%);
+    width: fit-content;
+    height: 2em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 2.5em;
+    margin-bottom:-1.5em;
+}
+
+.container-t img{
+    padding-top: 3em;
+}
+
+@media screen and (max-width:768px){
+    .card{
+        width: 60%;
+        height: 60vh;
+    }
+
+    .container-t img{
+        padding-top: 1.5em;
+    }
+}
